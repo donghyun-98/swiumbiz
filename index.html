@@ -19,15 +19,14 @@
             text-align: center;
         }
         main {
-            padding: 2em;
-            max-width: 800px;
-            margin: auto;
+            padding: 1em; /* 줄임 */
+            max-width: 100%; /* 수정 */
             background: white;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 8px;
         }
         section {
-            margin-bottom: 2em;
+            margin-bottom: 1.5em; /* 줄임 */
         }
         h2 {
             color: #000080; /* 네이비색 */
@@ -74,6 +73,16 @@
             bottom: 75px; /* Adjust as needed */
             right: 20px;
             z-index: 1000; /* Ensure credit stays above content */
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            main {
+                padding: 1em;
+            }
+            .freepik-credit {
+                bottom: 60px; /* Adjust for smaller screens */
+            }
         }
     </style>
 </head>
