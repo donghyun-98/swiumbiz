@@ -19,14 +19,15 @@
             text-align: center;
         }
         main {
-            padding: 1em; /* 줄임 */
+            padding: 1em;
             max-width: 100%; /* 수정 */
             background: white;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 8px;
+            overflow-x: hidden; /* 수정 */
         }
         section {
-            margin-bottom: 1.5em; /* 줄임 */
+            margin-bottom: 1.5em;
         }
         h2 {
             color: #000080; /* 네이비색 */
@@ -76,12 +77,22 @@
         }
 
         /* Mobile responsiveness */
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
             main {
                 padding: 1em;
             }
             .freepik-credit {
                 bottom: 60px; /* Adjust for smaller screens */
+            }
+        }
+
+        /* Small screens (phones, 600px and below) */
+        @media (max-width: 600px) {
+            main {
+                padding: 0.5em; /* Adjust padding for smaller screens */
+            }
+            .freepik-credit {
+                bottom: 50px; /* Adjust for smaller screens */
             }
         }
     </style>
